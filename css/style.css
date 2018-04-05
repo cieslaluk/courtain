@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.courtain {
+    height: 50vh;
+/*    transition: all 1s;*/
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.top {
+    background-color: white;
+    animation-name: toBottom;
+}
+
+.bottom {
+    background-color: red;
+    animation-name: toTop;
+}
+
+
+@keyframes toBottom {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes toTop {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
